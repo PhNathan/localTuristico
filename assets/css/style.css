@@ -1,5 +1,11 @@
 :root {
+  /* fonts */
   --font-family1: "Open Sans", sans-serif;
+  --bold: bold;
+  --regular: regular;
+  --italic: italic;
+
+  /* colors */
   --bg: #f5f4f0;
   --border: #d9d9d9;
 
@@ -11,13 +17,54 @@
   --accent-orange: #e95e10;
   --accent-pink: #e5245e;
   --accent-purple: #591b98;
-
+  /* sizes */
   --h1: 2.25em;
   --h2: 2em;
   --h3: 1.75em;
   --default-size: 1em;
+}
 
-  --bold: bold;
-  --regular: regular;
-  --italic: italic;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: inside;
+}
+
+body {
+  font-family: var(--font-family1);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.blue {
+  color: var(--accent-blue);
+}
+.pink {
+  color: var(--accent-pink);
+}
+.purple {
+  color: var(--accent-purple);
+}
+.orange {
+  color: var(--accent-orange);
+}
+
+.detail {
+  display: block;
+  color: var(--text-headline);
+  font-size: var(--default-size);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+body {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 88px 80px;
 }
